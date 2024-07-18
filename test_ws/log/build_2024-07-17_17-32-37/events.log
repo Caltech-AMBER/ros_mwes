@@ -1,0 +1,196 @@
+[0.000000] (-) TimerEvent: {}
+[0.000700] (test_a_msgs) JobQueued: {'identifier': 'test_a_msgs', 'dependencies': OrderedDict()}
+[0.000748] (test_pkg) JobQueued: {'identifier': 'test_pkg', 'dependencies': OrderedDict([('test_a_msgs', '/home/test_ws/install/test_a_msgs')])}
+[0.000764] (test_a_msgs) JobStarted: {'identifier': 'test_a_msgs'}
+[0.005330] (test_a_msgs) JobProgress: {'identifier': 'test_a_msgs', 'progress': 'cmake'}
+[0.005510] (test_a_msgs) JobProgress: {'identifier': 'test_a_msgs', 'progress': 'build'}
+[0.005969] (test_a_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/test_ws/build/test_a_msgs', '--', '-j12', '-l12'], 'cwd': '/home/test_ws/build/test_a_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'mochi'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/test_ws/build/test_a_msgs'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Los_Angeles'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.040931] (test_a_msgs) StdoutLine: {'line': b'[  9%] Built target test_a_msgs__rosidl_generator_c\n'}
+[0.044879] (test_a_msgs) StdoutLine: {'line': b'[ 12%] Built target test_a_msgs__cpp\n'}
+[0.052911] (test_a_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_test_a_msgs\n'}
+[0.057629] (test_a_msgs) StdoutLine: {'line': b'[ 22%] Built target test_a_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.060744] (test_a_msgs) StdoutLine: {'line': b'[ 32%] Built target test_a_msgs__rosidl_typesupport_introspection_c\n'}
+[0.062074] (test_a_msgs) StdoutLine: {'line': b'[ 41%] Built target test_a_msgs__rosidl_typesupport_c\n'}
+[0.067415] (test_a_msgs) StdoutLine: {'line': b'[ 51%] Built target test_a_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.070003] (test_a_msgs) StdoutLine: {'line': b'[ 67%] Built target test_a_msgs__rosidl_typesupport_cpp\n'}
+[0.070278] (test_a_msgs) StdoutLine: {'line': b'[ 70%] Built target test_a_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.083973] (test_a_msgs) StdoutLine: {'line': b'[ 70%] Built target test_a_msgs\n'}
+[0.097094] (test_a_msgs) StdoutLine: {'line': b'[ 74%] Built target test_a_msgs__py\n'}
+[0.099999] (-) TimerEvent: {}
+[0.113985] (test_a_msgs) StdoutLine: {'line': b'[ 80%] Built target test_a_msgs__rosidl_generator_py\n'}
+[0.129125] (test_a_msgs) StdoutLine: {'line': b'[ 87%] Built target test_a_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.134858] (test_a_msgs) StdoutLine: {'line': b'[ 93%] Built target test_a_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.137905] (test_a_msgs) StdoutLine: {'line': b'[100%] Built target test_a_msgs__rosidl_typesupport_c__pyext\n'}
+[0.189646] (test_a_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.190154] (test_a_msgs) StdoutLine: {'line': b'writing test_a_msgs.egg-info/PKG-INFO\n'}
+[0.190436] (test_a_msgs) StdoutLine: {'line': b'writing dependency_links to test_a_msgs.egg-info/dependency_links.txt\n'}
+[0.190537] (test_a_msgs) StdoutLine: {'line': b'writing top-level names to test_a_msgs.egg-info/top_level.txt\n'}
+[0.191530] (test_a_msgs) StdoutLine: {'line': b"reading manifest file 'test_a_msgs.egg-info/SOURCES.txt'\n"}
+[0.191815] (test_a_msgs) StdoutLine: {'line': b"writing manifest file 'test_a_msgs.egg-info/SOURCES.txt'\n"}
+[0.200127] (-) TimerEvent: {}
+[0.208687] (test_a_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_test_a_msgs_egg\n'}
+[0.217704] (test_a_msgs) CommandEnded: {'returncode': 0}
+[0.248432] (test_a_msgs) JobProgress: {'identifier': 'test_a_msgs', 'progress': 'install'}
+[0.255018] (test_a_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/test_ws/build/test_a_msgs'], 'cwd': '/home/test_ws/build/test_a_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'mochi'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/test_ws/build/test_a_msgs'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Los_Angeles'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.261093] (test_a_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.261319] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/ament_index/resource_index/rosidl_interfaces/test_a_msgs\n'}
+[0.261425] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs\n'}
+[0.261544] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg\n'}
+[0.261639] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/test.h\n'}
+[0.261855] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail\n'}
+[0.261961] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail/test__type_support.h\n'}
+[0.262158] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail/test__struct.h\n'}
+[0.262303] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail/test__functions.h\n'}
+[0.262424] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail/test__functions.c\n'}
+[0.262525] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.262622] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/environment/library_path.sh\n'}
+[0.262729] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/environment/library_path.dsv\n'}
+[0.262828] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/lib/libtest_a_msgs__rosidl_generator_c.so\n'}
+[0.262935] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs\n'}
+[0.263059] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg\n'}
+[0.263168] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.263251] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail\n'}
+[0.263332] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail/test__rosidl_typesupport_fastrtps_c.h\n'}
+[0.263414] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/lib/libtest_a_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.263496] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs\n'}
+[0.263589] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg\n'}
+[0.263673] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.263764] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail\n'}
+[0.263848] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail/test__type_support.c\n'}
+[0.263930] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail/test__rosidl_typesupport_introspection_c.h\n'}
+[0.264011] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/lib/libtest_a_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.264142] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/lib/libtest_a_msgs__rosidl_typesupport_c.so\n'}
+[0.264197] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs\n'}
+[0.264240] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg\n'}
+[0.264273] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/test.hpp\n'}
+[0.264305] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail\n'}
+[0.264338] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail/test__struct.hpp\n'}
+[0.264369] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail/test__builder.hpp\n'}
+[0.264402] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail/test__traits.hpp\n'}
+[0.264434] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs\n'}
+[0.264465] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg\n'}
+[0.264495] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.264526] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail\n'}
+[0.264558] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail/dds_fastrtps\n'}
+[0.264592] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail/test__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.264623] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/lib/libtest_a_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.264653] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs\n'}
+[0.264682] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg\n'}
+[0.264711] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail\n'}
+[0.264740] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail/test__type_support.cpp\n'}
+[0.264768] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/include/test_a_msgs/test_a_msgs/msg/detail/test__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.264797] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/lib/libtest_a_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.264826] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/lib/libtest_a_msgs__rosidl_typesupport_cpp.so\n'}
+[0.264855] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/environment/pythonpath.sh\n'}
+[0.264884] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/environment/pythonpath.dsv\n'}
+[0.264912] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs-0.0.1-py3.10.egg-info\n'}
+[0.264940] (test_a_msgs) StdoutLine: {'line': b'-- Installing: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[0.264969] (test_a_msgs) StdoutLine: {'line': b'-- Installing: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[0.265001] (test_a_msgs) StdoutLine: {'line': b'-- Installing: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[0.265029] (test_a_msgs) StdoutLine: {'line': b'-- Installing: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[0.265059] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs\n'}
+[0.265088] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs/test_a_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.265116] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs/_test_a_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.265144] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs/test_a_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.265173] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs/_test_a_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.265202] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs/__init__.py\n'}
+[0.265232] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs/_test_a_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.265260] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs/msg\n'}
+[0.265289] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs/msg/_test_s.c\n'}
+[0.265318] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs/msg/__init__.py\n'}
+[0.265350] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs/msg/_test.py\n'}
+[0.265378] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs/test_a_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.265407] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs/libtest_a_msgs__rosidl_generator_py.so\n'}
+[0.284233] (test_a_msgs) StdoutLine: {'line': b"Listing '/home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs'...\n"}
+[0.284384] (test_a_msgs) StdoutLine: {'line': b"Listing '/home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs/msg'...\n"}
+[0.287026] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs/test_a_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.287176] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs/test_a_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.287371] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages/test_a_msgs/test_a_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.287500] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/lib/libtest_a_msgs__rosidl_generator_py.so\n'}
+[0.287815] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/msg/Test.idl\n'}
+[0.287969] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/msg/Test.msg\n'}
+[0.288085] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/ament_index/resource_index/package_run_dependencies/test_a_msgs\n'}
+[0.288213] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/ament_index/resource_index/parent_prefix_path/test_a_msgs\n'}
+[0.288320] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/environment/ament_prefix_path.sh\n'}
+[0.288447] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/environment/ament_prefix_path.dsv\n'}
+[0.288554] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/environment/path.sh\n'}
+[0.288678] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/environment/path.dsv\n'}
+[0.288801] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/local_setup.bash\n'}
+[0.288935] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/local_setup.sh\n'}
+[0.289045] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/local_setup.zsh\n'}
+[0.289126] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/local_setup.dsv\n'}
+[0.289203] (test_a_msgs) StdoutLine: {'line': b'-- Installing: /home/test_ws/install/test_a_msgs/share/test_a_msgs/package.dsv\n'}
+[0.289280] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/ament_index/resource_index/packages/test_a_msgs\n'}
+[0.289364] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/export_test_a_msgs__rosidl_generator_cExport.cmake\n'}
+[0.289442] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/export_test_a_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.289520] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/export_test_a_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.289597] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/export_test_a_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.289675] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/test_a_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.289793] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/test_a_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.289884] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/test_a_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.289962] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/test_a_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.290040] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/export_test_a_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.290164] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/export_test_a_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.290249] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/export_test_a_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.290432] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/test_a_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.290598] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/test_a_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.290667] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/test_a_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.290701] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/test_a_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.290734] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/export_test_a_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.290767] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/export_test_a_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.290798] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.290830] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.290862] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.290894] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.290926] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.290957] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.290988] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.291019] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/test_a_msgsConfig.cmake\n'}
+[0.291049] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake/test_a_msgsConfig-version.cmake\n'}
+[0.291079] (test_a_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/test_ws/install/test_a_msgs/share/test_a_msgs/package.xml\n'}
+[0.291610] (test_a_msgs) CommandEnded: {'returncode': 0}
+[0.300333] (-) TimerEvent: {}
+[0.339224] (test_a_msgs) JobEnded: {'identifier': 'test_a_msgs', 'rc': 0}
+[0.339980] (test_pkg) JobStarted: {'identifier': 'test_pkg'}
+[0.343383] (test_pkg) JobProgress: {'identifier': 'test_pkg', 'progress': 'cmake'}
+[0.343681] (test_pkg) JobProgress: {'identifier': 'test_pkg', 'progress': 'build'}
+[0.343806] (test_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/test_ws/build/test_pkg', '--', '-j12', '-l12'], 'cwd': '/home/test_ws/build/test_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'mochi'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/test_ws/install/test_a_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/test_ws/install/test_a_msgs:/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/test_ws/build/test_pkg'), ('PYTHONPATH', '/home/test_ws/install/test_a_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Los_Angeles'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/test_ws/install/test_a_msgs:/opt/ros/humble')]), 'shell': False}
+[0.363420] (test_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400477] (-) TimerEvent: {}
+[0.451359] (test_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.474626] (test_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.476384] (test_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.480652] (test_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.488530] (test_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.499322] (test_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500542] (-) TimerEvent: {}
+[0.544022] (test_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.545598] (test_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600667] (-) TimerEvent: {}
+[0.606071] (test_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.625278] (test_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.653860] (test_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.660400] (test_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.700803] (-) TimerEvent: {}
+[0.709998] (test_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.710376] (test_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.761685] (test_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.763166] (test_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.800956] (-) TimerEvent: {}
+[0.881883] (test_pkg) StdoutLine: {'line': b'-- Found test_a_msgs: 0.0.1 (/home/test_ws/install/test_a_msgs/share/test_a_msgs/cmake)\n'}
+[0.901098] (-) TimerEvent: {}
+[0.956556] (test_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.961144] (test_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[0.961844] (test_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/test_ws/build/test_pkg\n'}
+[0.983235] (test_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/test_node.dir/src/test_node.cpp.o\x1b[0m\n'}
+[0.988135] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/test_ws/src/test_pkg/src/test_node.cpp:1:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Krclcpp/rclcpp.hpp: No such file or directory\n'}
+[0.988355] (test_pkg) StderrLine: {'line': b'    1 | #include \x1b[01;31m\x1b[K<rclcpp/rclcpp.hpp>\x1b[m\x1b[K\n'}
+[0.988456] (test_pkg) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.988683] (test_pkg) StderrLine: {'line': b'compilation terminated.\n'}
+[0.988814] (test_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_node.dir/build.make:76: CMakeFiles/test_node.dir/src/test_node.cpp.o] Error 1\n'}
+[0.988910] (test_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_node.dir/all] Error 2\n'}
+[0.989000] (test_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[0.991152] (test_pkg) CommandEnded: {'returncode': 2}
+[1.001268] (-) TimerEvent: {}
+[1.006207] (test_pkg) JobEnded: {'identifier': 'test_pkg', 'rc': 2}
+[1.016865] (-) EventReactorShutdown: {}

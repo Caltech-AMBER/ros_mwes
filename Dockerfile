@@ -40,6 +40,7 @@ RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
     apt-get update -y && \
     apt-get install -y \
     ros-humble-ros-base \
+    ros-dev-tools \
     ros-humble-rosidl-generator-cpp \
     ros-humble-rosidl-default-generators
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
