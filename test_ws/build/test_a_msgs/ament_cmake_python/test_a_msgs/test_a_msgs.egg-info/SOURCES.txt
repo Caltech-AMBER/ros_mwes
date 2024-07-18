@@ -1,8 +1,0 @@
-setup.py
-test_a_msgs/__init__.py
-test_a_msgs.egg-info/PKG-INFO
-test_a_msgs.egg-info/SOURCES.txt
-test_a_msgs.egg-info/dependency_links.txt
-test_a_msgs.egg-info/top_level.txt
-test_a_msgs/msg/__init__.py
-test_a_msgs/msg/_test.py

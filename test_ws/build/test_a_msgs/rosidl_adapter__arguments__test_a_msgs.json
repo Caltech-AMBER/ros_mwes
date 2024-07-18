@@ -1,6 +1,0 @@
-{
-  "package_name": "test_a_msgs",
-  "non_idl_tuples": [
-    "/home/test_ws/src/test_msgs/test_a_msgs:msg/Test.msg"
-  ]
-}
