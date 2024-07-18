@@ -9,11 +9,13 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(test_a_msgs REQUIRED)
+find_package(test_b_msgs REQUIRED)
 
 set(THIS_PACKAGE_INCLUDE_DEPENDS
   ament_cmake
   rclcpp
   test_a_msgs
+  test_b_msgs
 )
 include_directories(${THIS_PACKAGE_INCLUDE_DEPENDS})
 

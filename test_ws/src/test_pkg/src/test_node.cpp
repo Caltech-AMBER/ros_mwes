@@ -1,20 +1,26 @@
 #include <rclcpp/rclcpp.hpp>
-#include "test_a_msgs/msg/test.hpp"
+#include "test_a_msgs/msg/test_a.hpp"
+#include "test_b_msgs/msg/test_b.hpp"
 
 class TestNode : public rclcpp::Node {
 public:
     TestNode() : Node("test_node") {
-        pub_ = this->create_publisher<test_a_msgs::msg::Test>("test_topic", 10);
+        pub_ = this->create_publisher<test_b_msgs::msg::TestB>("test_topic", 10);
         timer_ = this->create_wall_timer(std::chrono::seconds(1), [this]() {
-            test_a_msgs::msg::Test msg;
-            msg.header.stamp = this->now();
-            pub_->publish(msg);
+            test_a_msgs::msg::TestA msg_a;
+            msg_a.header.stamp = this->now();
+            pub_->publish(msg_a);
+
+            test_b_msgs::msg::TestB msg_b;
+            msg_b.header.stamp = this->now();
+            msg_b.test = msg_a;
+
+            pub_->publish(msg_b);
             RCLCPP_INFO(this->get_logger(), "Publishing message");
         });
     }
 private:
-    rclcpp::Publisher<test_a_msgs::msg::Test>::SharedPtr pub_;
-    // make a timer
+    rclcpp::Publisher<test_b_msgs::msg::TestB>::SharedPtr pub_;
     rclcpp::TimerBase::SharedPtr timer_;
 };
 

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(test_a_msgs)
+project(test_b_msgs)
 
 if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 17)
@@ -12,16 +12,19 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(test_a_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/TestA.msg"
+  "msg/TestB.msg"
   DEPENDENCIES
   std_msgs
+  test_a_msgs
 )
 
 set(THIS_PACKAGE_INCLUDE_DEPENDS
   ament_cmake
   std_msgs
+  test_a_msgs
   rosidl_default_generators
 )
 include_directories(${THIS_PACKAGE_INCLUDE_DEPENDS})
