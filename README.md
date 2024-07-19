@@ -9,26 +9,19 @@ In this minimum working example, we define 3 packages:
 2. `test_b_msgs`, which contains a message `TestB` with a `TestA` field in it, so this package should depend on `test_a_msgs`. This simulates the setup in `obelisk`, which has one custom message depend on another.
 3. `test_pkg`, which spins a trivial node with a timer that publishes a message of `TestB` type.
 
-The `docker-compose-simple.yml` file is very simple, and mounts the repo root into a directory called `/repro` in the container. The main reason for doing this is to allow caches to persist between sessions in the container to reduce debugging friction.
+
+We provide two options for usage: you can either mount this repository into the container, or you can add it to the container during build time. The main reason for mounting is to allow caches to persist between sessions in the container to reduce debugging friction such that you don't have to, e.g., recreate the pixi environment from scratch every time you enter the container.
+
+The two options for running the MWE container are below. If you choose the no-mount option, make sure to run it before generating any cache or build files so they do not get built into the image.
 ```
-services:
-  test:
-    shm_size: '12gb'
-    build:
-      context: .
-      dockerfile: Dockerfile.simple
-    volumes:
-      - ./:/repro
-    stdin_open: true
-    tty: true
-    command: /bin/bash
+# mounts the repo root at the /repro directory
+docker compose -f docker-compose-simple.yml run --build test
+
+# no mounting - just adds the repo root.
+docker compose -f docker-compose-simple-nomount.yml run --build test
 ```
 
-Start up the MWE container by running
-```
-docker compose -f docker-compose-simple.yml run --build test
-```
-Within the container, run
+Either way, within the container, run
 ```
 # activate pixi shell
 pixi shell
