@@ -46,5 +46,5 @@ RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 
 # reproduce error by minimal example in test workspace
-ADD . /repro
+ADD test_ws/src /repro/test_ws/src
 WORKDIR /repro

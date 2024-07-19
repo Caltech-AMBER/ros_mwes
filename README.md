@@ -12,12 +12,12 @@ In this minimum working example, we define 3 packages:
 
 We provide two options for usage: you can either mount this repository into the container, or you can add it to the container during build time. The main reason for mounting is to allow caches to persist between sessions in the container to reduce debugging friction such that you don't have to, e.g., recreate the pixi environment from scratch every time you enter the container.
 
-The two options for running the MWE container are below. If you choose the no-mount option, make sure to run it before generating any cache or build files so they do not get built into the image.
+The two options for running the MWE container are below.
 ```
 # mounts the repo root at the /repro directory
 docker compose -f docker-compose-simple.yml run --build test
 
-# no mounting - just adds the repo root.
+# no mounting - just adds the repo root
 docker compose -f docker-compose-simple-nomount.yml run --build test
 ```
 
@@ -92,9 +92,15 @@ error while loading shared libraries: librosidl_typesupport_cpp.so: cannot open 
 ```
 
 ### Comparing the MWE Without Pixi
-We now run the same MWE but without using pixi, instead installing all of the required dependencies via pre-built ROS binaries in the docker container. To start the container, run
+We now run the same MWE but without using pixi, instead installing all of the required dependencies via pre-built ROS binaries in the docker container.
+
+Similarly, we provide both a mounted and non-mounted option for repro.
 ```
+# mounted option
 docker compose -f docker-compose-simple-nopixi.yml run --build test
+
+# no mounting
+docker compose -f docker-compose-simple-nopixi-nomount.yml run --build test
 ```
 Within the container, run
 ```

@@ -35,5 +35,6 @@ RUN apt-get update && apt-get install -y \
 RUN curl -fsSL https://pixi.sh/install.sh | bash
 
 # reproduce error by minimal example in test workspace
-ADD . /repro
+ADD pixi.toml /repro/pixi.toml
+ADD test_ws/src /repro/test_ws/src
 WORKDIR /repro
