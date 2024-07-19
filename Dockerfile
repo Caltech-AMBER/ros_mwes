@@ -31,17 +31,11 @@ RUN apt-get update && apt-get install -y \
     rm -rf /var/lib/apt/lists/* && \
     locale-gen en_US.UTF-8
 
-# ROS2
-RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
-        -o /usr/share/keyrings/ros-archive-keyring.gpg && \
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] \
-        http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | \
-        tee /etc/apt/sources.list.d/ros2.list > /dev/null && \
-    apt-get update -y && \
-    apt-get install -y \
-    ros-humble-ros-base \
-    ros-dev-tools \
-    ros-humble-rosidl-generator-cpp \
-    ros-humble-rosidl-default-generators
-RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-WORKDIR /home/test_ws
+# install pixi
+RUN curl -fsSL https://pixi.sh/install.sh | bash
+
+# reproduce error by cloning obelisk
+RUN git clone https://github.com/Caltech-AMBER/obelisk
+WORKDIR /obelisk
+RUN git checkout 46f503cf2ba7068b2b576e5540eb3ab17cea7f10
+ENV OBELISK_ROOT=/obelisk
