@@ -118,3 +118,25 @@ ros-humble-rosidl-typesupport-introspection-c      3.1.5         py311hb335429_6
 ros-humble-rosidl-typesupport-introspection-cpp    3.1.5         py311hb335429_6      29.8 KiB   conda  ros-humble-rosidl-typesupport-introspection-cpp-3.1.5-py311hb335429_6.tar.bz2
 
 ```
+
+### Comparing the MWE Without Pixi
+We now run the same MWE but without using pixi, instead installing all of the required dependencies via pre-built ROS binaries in the docker container. To start the container, run
+```
+docker compose -f docker-compose-simple-nopixi.yml run --build test
+```
+Within the container, run
+```
+cd test_ws
+rm -rf build install
+colcon build --symlink-install --packages-select test_a_msgs test_b_msgs --parallel-workers $(nproc)
+source install/setup.bash
+colcon build --symlink-install --parallel-workers $(nproc)
+source install/setup.bash
+ros2 run test_pkg test_node
+```
+This will produce periodic output like this:
+```
+[INFO] [1721411615.185264056] [test_node]: Publishing message
+[INFO] [1721411616.185296777] [test_node]: Publishing message
+[INFO] [1721411617.185177851] [test_node]: Publishing message
+```
