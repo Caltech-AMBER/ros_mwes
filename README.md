@@ -8,10 +8,10 @@ Start up the Obelisk container by running
 ```
 docker compose -f docker-compose-obelisk.yml run --build test
 ```
-Within the container, run
+Within the container, run the following. The docker compose file doesn't use the nvidia runtime to minimize shared info between the local system and the container - it should still reproduce the error.
 ```
 # activate pixi shell
-pixi shell -e dev
+pixi shell -e dev-no-gpu
 
 # within pixi shell, run these commands
 pixi run messages-build
@@ -53,6 +53,26 @@ The nodes cannot completely launch without error, since the setup also cannot in
 ```
 
 ### By Using the MWE
+In this minimum working example, we define 3 packages:
+1. `test_a_msgs`, which contains a simple definition of a trivial message `TestA` that only has a `std_msgs/Header` field.
+2. `test_b_msgs`, which contains a message `TestB` with a `TestA` field in it, so this package should depend on `test_a_msgs`. This simulates the setup in `obelisk`, which has one custom message depend on another.
+3. `test_pkg`, which spins a trivial node with a timer that publishes a message of `TestB` type.
+
+The `docker-compose-simple.yml` file is very simple, and mounts the repo root into a directory called `/repro` in the container. The main reason for doing this is to allow caches to persist between sessions in the container to reduce debugging friction.
+```
+services:
+  test:
+    shm_size: '12gb'
+    build:
+      context: .
+      dockerfile: Dockerfile.simple
+    volumes:
+      - ./:/repro
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+```
+
 Start up the MWE container by running
 ```
 docker compose -f docker-compose-simple.yml run --build test
