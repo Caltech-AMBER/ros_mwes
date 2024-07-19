@@ -1,0 +1,11 @@
+services:
+  test:
+    shm_size: '12gb'
+    build:
+      context: .
+      dockerfile: Dockerfile.simple
+    volumes:
+      - ./:/repro
+    stdin_open: true
+    tty: true
+    command: /bin/bash
