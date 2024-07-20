@@ -1,0 +1,12 @@
+[project]
+name = "test"
+channels = ["conda-forge", "robostack-staging"]
+platforms = ["linux-64"]
+
+[dependencies]
+python = ">=3.10"
+pip = ">=24.0"
+setuptools = "<=70.4"
+ros-humble-ros-base = "*"
+colcon-common-extensions = "*"
+cmake = "3.16.*"

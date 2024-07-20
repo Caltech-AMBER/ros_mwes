@@ -31,7 +31,7 @@ RUN apt-get update && apt-get install -y \
     rm -rf /var/lib/apt/lists/* && \
     locale-gen en_US.UTF-8
 
-# ROS2
+# install ROS dependencies
 RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
         -o /usr/share/keyrings/ros-archive-keyring.gpg && \
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] \
@@ -40,7 +40,11 @@ RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
     apt-get update -y && \
     apt-get install -y \
     ros-humble-ros-base \
+    ros-dev-tools \
     ros-humble-rosidl-generator-cpp \
     ros-humble-rosidl-default-generators
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-WORKDIR /home/test_ws
+
+# reproduce error by minimal example in test workspace
+ADD test_ws/src /repro/test_ws/src
+WORKDIR /repro
